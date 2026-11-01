@@ -15,4 +15,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Pip aktualisieren
 RUN pip install --no-cache-dir --upgrade pip
-
+RUN apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*
